@@ -1,0 +1,134 @@
+.sheet-container .sheet-mirror-input {
+    width: calc(100% - 40px);
+    height: 25px;
+    font-size: 16px;
+    margin-left: 40px;
+    outline: none !important;
+    border: none;
+    border-left: 1px solid #eee;
+}
+
+.sheet-container .sheet-mirror-input-console {
+    position: relative;
+}
+
+.sheet-container .sheet-mirror-input-icon {
+    position: absolute;
+    left: 10px;
+    top: 3px;
+    width: 20px;
+    height: 20px;
+}
+
+span.sheet-container, span.sheet-container:focus {
+    outline: none;
+    overflow: scroll;
+    position: relative;
+}
+
+.sheet-container .ucsc-spread-sheet {
+    table-layout: fixed;
+    border-collapse: collapse;
+} 
+
+.sheet-container .ucsc-spread-sheet tbody{
+    display:block;
+    overflow:auto;
+    height:100vh;
+    width:100vw;
+} 
+
+.sheet-container .ucsc-spread-sheet td{
+    height: 17px;
+    user-select: none;
+    cursor: cell;
+    background-color: unset;
+    transition : background-color 500ms ease;
+    vertical-align: middle;
+    text-align: right;
+    border: 1px solid #DDD;
+    padding: 0;
+    vertical-align: bottom;
+    white-space: normal;
+    overflow-x: hidden;
+    font-size: 16px;
+    width: 80px;
+}
+
+.sheet-container .ucsc-spread-sheet .cell.cursor {
+    border: 1px double rgb(33, 133, 208);
+    transition: none;
+}
+.sheet-container .ucsc-spread-sheet .cell.multi-selecting {
+    box-shadow: inset 0 -100px 0 rgba(33, 133, 208, 0.15);
+}
+
+
+.sheet-container .ucsc-spread-sheet .cell > input {
+    outline: none !important;
+    text-align: left;
+    width: calc(100% - 2px);
+    border: none;
+    height: 15px;
+    background: none;
+    display: block;
+    font-size: 14px;
+}
+
+.sheet-container .ucsc-spread-sheet .cell > .plain-text {
+    display: block;
+    width: 80px;
+    height: 100%;
+    text-align: left;
+}
+
+.sheet-container .ucsc-spread-sheet .sheet-head {
+    background: #f5f5f5;
+    color: #999;
+    text-align: center;
+    min-width: 40px;
+}
+
+.sheet-container .context-box {
+    position: fixed;
+    width: 200px;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.2);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    user-select: none;
+    overflow-y: auto;
+    height: auto;
+    padding: 12px 0px;
+    font-size: 13px;
+    font-family: var(--docs-material-font-family,arial,sans-serif);
+    font-weight: 500;
+}
+
+.sheet-container .context-box .context-box-list {
+    padding: 6px 0px 6px 18px;
+    cursor: pointer;
+}
+
+.sheet-container .context-box .context-box-list:hover {
+    border-color: #eee;
+    background-color: #eee;
+}
+
+.sheet-container .context-box .context-box-divider {
+    border-top: 1px solid #ebebeb;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.sheet-container .console {
+    padding: 15px 0px 10px 0px;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+}
+
+.plain-button {
+    padding: 3px 10px;
+    user-select: none;
+    cursor: pointer;
+    font-size: 14px;
+}
